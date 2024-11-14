@@ -1,0 +1,55 @@
+GET http://localhost:3000/data
+###
+GET http://localhost:3000/data/1
+###
+POST http://localhost:3000/data
+Content-Type: application/json
+
+{
+    "id": "5",
+    "Firstname": "Anura",
+    "Surname": "Damayantha"
+}
+
+###
+POST http://localhost:3000/data
+Content-Type: text/plain
+
+{
+    "id": "5",
+    "Firstname": "Anura",
+    "Surname": "Damayantha"
+}
+###
+DELETE http://localhost:3000/data/5
+Content-Type: application/json
+
+### Update existing data (id: "1")
+PUT http://localhost:3000/data/1
+Content-Type: application/json
+
+{
+    "Firstname": "Joni",
+    "Surname": "Rantha"
+}
+
+### Create a new data item if it doesn't exist (id: "3")
+PUT http://localhost:3000/data/4
+Content-Type: application/json
+
+{
+    "Firstname": "Mikka",
+    "Surname": "Rantalinen"
+}
+
+###
+GET http://localhost:3000/doc
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{   
+    "userName": "jk", 
+    "passsword": "sala" 
+} 
