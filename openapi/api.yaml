@@ -9,7 +9,7 @@ info:
     - [OpenAPI Specification](https://learn.openapis.org/)
   termsOfService: http://swagger.io/terms/
   contact:
-    email: apiteam@swagger.io
+    email: anura.pitumpe@edu.karelia.fi
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
