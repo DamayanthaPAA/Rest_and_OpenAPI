@@ -1,10 +1,13 @@
 import { Router } from 'express';
+// import { getData } from '../database.js';
 let router = Router()
+// let data = getData();
 
 let data = [
     { "id": "1", "Firstname": "Jyri", "Surname": "Kemppainen" },
     { "id": "2", "Firstname": "Petri", "Surname": "Laitinen" }
 ]
+
 
 router.get('/', (req, res) => {
     res.json( data )

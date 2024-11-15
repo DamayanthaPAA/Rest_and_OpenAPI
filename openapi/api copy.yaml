@@ -141,58 +141,9 @@ paths:
         '415':
           description: Unsupported media type
   /login:
-    post:
-      tags:
-        - Authentication
-      summary: User login
-      description: Authenticates a user and returns a Bearer token for accessing protected endpoints.
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                userName:
-                  type: string
-                  example: "jk"
-                passsword:
-                  type: string
-                  example: "sala"
-              required:
-                - userName
-                - passsword
-      responses:
-        '200':
-          description: Successful login
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  username:
-                    type: string
-                    example: "jk"
-                  access_token:
-                    type: string
-                    description: "JWT Bearer token"
-                    example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-                  token_type:
-                    type: string
-                    example: "Bearer"
-                  expires_in:
-                    type: string
-                    example: "1h"
-        '401':
-          description: Invalid username or password
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  error:
-                    type: string
-                    example: "login"
+    get:
+      tag: login data
+    summary : get toke
 components:
   schemas:
     Data:
